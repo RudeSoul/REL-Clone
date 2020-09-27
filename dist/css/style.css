@@ -459,9 +459,33 @@ i {
   display: flex;
 }
 
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1.42857;
+  border-radius: 0;
+}
+
 .rel-header {
   position: fixed;
   width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 .top-header {
@@ -517,12 +541,13 @@ i {
 .navbar {
   width: 100%;
   background: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 8px;
 }
 
 .navbar__wrapper {
   width: 90%;
   margin: 0 auto;
-  margin-top: 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -596,5 +621,129 @@ i {
 .navbar__search .navbar__search-btn i {
   opacity: 0.3;
   margin-top: 4px;
+}
+
+.main-body {
+  position: relative;
+  top: 88px;
+  max-width: 1680px;
+}
+
+.main-page {
+  margin: 0 75px;
+  background: #414850;
+}
+
+.hero-section__container {
+  width: 100%;
+  height: 80vh;
+  min-height: 750px;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-section__container:hover .btn-previous, .hero-section__container:active .btn-previous, .hero-section__container:focus .btn-previous {
+  left: 0;
+}
+
+.hero-section__container:hover .btn-next, .hero-section__container:active .btn-next, .hero-section__container:focus .btn-next {
+  right: 0;
+}
+
+.hero-section__carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(./../../images/Carbon_Special_GrillOn_V4-scaled-e1600363381503-1680x1028.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-clip: border-box;
+}
+
+.hero-section .carousel-btn {
+  position: absolute;
+  -webkit-transition: left 0.2s ease-in;
+  transition: left 0.2s ease-in;
+  background: rgba(255, 255, 255, 0.95);
+  height: 70px;
+  width: 35px;
+  color: #000;
+  z-index: 3;
+}
+
+.hero-section .btn-previous {
+  left: -40px;
+}
+
+.hero-section .btn-previous img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.hero-section .btn-next {
+  right: -40px;
+}
+
+.hero-section .btn-next img {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.hero-section__caption {
+  width: 65%;
+  padding: 8% 0 0 8%;
+  color: #ffffff;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+
+.hero-section__header h2 {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section__text {
+  width: 100%;
+  font-size: 1rem;
+  margin: 0 0 10px;
+  letter-spacing: 0.033em;
+  line-height: 1.4;
+}
+
+.hero-section__btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 1.5rem;
+  padding: 1rem 2.75rem;
+}
+
+.hero-section__btn span {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.hero-section__navigation {
+  position: absolute;
+  bottom: 120px;
+  left: calc((100% / 12) + 15px);
+  width: 91.66667%;
+}
+
+.hero-section__navigation-dot {
+  margin-left: 0;
+  margin-right: 25px;
+}
+
+.hero-section__navigation-dot i {
+  color: #ffffff;
+  font-size: 13px;
 }
 /*# sourceMappingURL=style.css.map */
