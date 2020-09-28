@@ -1,0 +1,88 @@
+$font-family-roboto: "Roboto", sans-serif;
+
+$font-family--default: $font-family-roboto;
+
+$white: #ffffff;
+$black: #000000;
+$gallery: #eeeeee;
+$alabaster: #fafafa;
+$alto: #e0e0e0;
+$gray: #c7c7c7;
+$dusty-gray: #9e9d9d;
+$rolling-ston: #707478;
+$oslo-gray: #80858b;
+$red: #d24d57;
+$blue: #3a539b;
+$light-blue: #009bde;
+$yellow: #f7ca18;
+$green: #36d7b7;
+$mercury: #e5e5e5;
+$Jacksons-Purple: #1a237e;
+$outer-space: #263238;
+$Silver-Chalice: #9e9e9e;
+$Fern: #66bb6a;
+$dove-gray: #616161;
+$mine-shaft: #212121;
+$blue-ribbion: #304ffe;
+$coral-red: #ff3642;
+$catsill-white: #eff2f7;
+$heather: #c0ccda;
+$plantation: #223741;
+$gull-gray: #9faab7;
+$electric-violet: #6236ff;
+$blaze-orange: #fa6400;
+$turquoise: #44d7b6;
+$silver: #bdbdbd;
+$wave-orange: #eaa800;
+$blaze-orange: #fa6400;
+$coral: #ff7849;
+$french-rose: #ec407a;
+$selective-yellow: #f7b500;
+$french-pass: #b9ddfc;
+$puerto-rico: #4bc4c2;
+$amaranth: #e91e62;
+
+$pastel-green: #63d9a0;
+$royal-heath: #a3296e;
+$doger-blue: #2196f3;
+
+$shamrock: #2fcd8b;
+$azure-radiance: #0091ff;
+
+$killarney: #397049;
+
+$primary-color: $white;
+$body-color: $white;
+
+$text-color--black: $black;
+
+$text-color--ic-lunch: $blue-ribbion;
+$text-color--pubmed: $blue-ribbion;
+
+$background-color--header: $Jacksons-Purple;
+$background-color--h2: $black;
+
+$background-color--side-nav: $outer-space;
+
+$short-overview__label--text-color: $Silver-Chalice;
+
+$short-overview__body-label--text-color: $dove-gray;
+$short-overview__body-placeholder--text-color: $mine-shaft;
+
+$side-nav__img--border: $Fern;
+$btn-border-color: $catsill-white;
+$btn-rect-border-color: $heather;
+
+$indicator__text-color: $gull-gray;
+
+//Heading font size vairables
+$heading-line-height: 28px !default;
+$head1-font-size: 26px !default;
+$head2-font-size: $head1-font-size - 4px !default;
+$head3-font-size: $head1-font-size - 8px !default;
+
+//Breakpoints
+$sm-device: 425px;
+$md-device: 768px;
+$lg-device: 992px;
+$xl-device: 1440px;

@@ -1,0 +1,20 @@
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.btn {
+  padding: 1rem 2rem;
+
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+
+  font-size: 18px;
+  line-height: 1.42857;
+  border-radius: 0;
+}

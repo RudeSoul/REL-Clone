@@ -1,0 +1,110 @@
+.hero-section {
+  @include e(container) {
+    width: 100%;
+    height: 80vh;
+    min-height: 750px;
+
+    position: relative;
+    overflow: hidden;
+
+    align-items: center;
+    @include hover {
+      .btn-previous {
+        left: 0;
+      }
+      .btn-next {
+        right: 0;
+      }
+    }
+  }
+
+  @include e(carousel) {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(./../../images/Carbon_Special_GrillOn_V4-scaled-e1600363381503-1680x1028.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-clip: border-box;
+  }
+  .carousel-btn {
+    position: absolute;
+    transition: left 0.2s ease-in;
+    background: rgba(255, 255, 255, 0.95);
+    height: 70px;
+    width: 35px;
+    color: #000;
+    z-index: 3;
+  }
+  .btn-previous {
+    left: -40px;
+    img {
+      transform: rotate(90deg);
+    }
+  }
+  .btn-next {
+    right: -40px;
+
+    img {
+      transform: rotate(-90deg);
+    }
+  }
+
+  @include e(caption) {
+    width: 76%;
+    padding: 8% 0 0 8%;
+    color: #ffffff;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  }
+  @include e(header) {
+    h2 {
+      font-size: 4rem;
+      font-style: normal;
+      font-weight: 300;
+
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @include e(text) {
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 10px;
+    letter-spacing: 0.033em;
+    line-height: 1.4;
+  }
+  @include e(btn) {
+    width: fit-content;
+    margin-top: 1.5rem;
+    padding: 1rem 2.75rem;
+    span {
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    @include hover {
+      background: #ffffff;
+      span {
+        color: #000000;
+      }
+    }
+  }
+
+  @include e(navigation) {
+    position: absolute;
+    bottom: 120px;
+    left: calc((100% / 12) + 15px);
+    width: 91.66667%;
+  }
+
+  @include e(navigation-dot) {
+    margin-left: 0;
+    margin-right: 25px;
+    i {
+      color: #ffffff;
+      font-size: 13px;
+    }
+  }
+}
