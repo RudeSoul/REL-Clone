@@ -1,5 +1,27 @@
+.h-w-37-pc {
+  @include mqMax(xl) {
+    width: 37%;
+  }
+}
+
 .h-width-56 {
   width: 56%;
+
+  @include mqMax(xl) {
+    width: 56.85%;
+  }
+}
+
+.h-w-53-pc {
+  @include mqMax(xl) {
+    width: 53%;
+  }
+}
+
+.h-w-59-pc {
+  @include mqMax(xl) {
+    width: 59%;
+  }
 }
 
 .h-z-index-1 {

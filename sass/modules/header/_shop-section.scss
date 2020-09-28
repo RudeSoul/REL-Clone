@@ -26,6 +26,10 @@
 .about-us {
   margin-top: -11rem;
 
+  @include mqMax(xl) {
+    margin-top: -14.7rem;
+  }
+
   @include e(image) {
     width: 420px;
     height: 420px;
@@ -35,6 +39,11 @@
       height: 100%;
       object-fit: cover;
     }
+
+    @include mqMax(xl) {
+      width: 380px;
+      height: 380px;
+    }
   }
 
   @include e(carousel) {
@@ -42,6 +51,11 @@
 
     width: 420px;
     height: 420px;
+
+    @include mqMax(xl) {
+      width: 380px;
+      height: 380px;
+    }
   }
 
   @include e(icons) {
