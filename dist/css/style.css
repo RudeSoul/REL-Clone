@@ -479,6 +479,10 @@ i {
   border-radius: 0;
 }
 
+.h-width-56 {
+  width: 56.7%;
+}
+
 .rel-header {
   position: fixed;
   width: 100%;
@@ -916,7 +920,7 @@ i {
 }
 
 .about-us__carousel {
-  width: 388px;
+  width: 387px;
   height: 388px;
 }
 
@@ -963,5 +967,51 @@ i {
 .about-us__btn span {
   font-size: 1rem;
   font-weight: bold;
+}
+
+.about-us__btn:hover, .about-us__btn:active, .about-us__btn:focus {
+  background: #ffffff;
+}
+
+.about-us__btn:hover span, .about-us__btn:active span, .about-us__btn:focus span {
+  color: #000000;
+}
+
+.our-purpose {
+  background-color: #b1966b;
+  color: #fff;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 44px;
+}
+
+.our-purpose__title {
+  margin-top: 76px;
+  margin-bottom: 24px;
+}
+
+.our-purpose__title h2 {
+  font-size: 4.86667rem;
+  font-weight: 400;
+}
+
+.our-purpose__btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 30px;
+}
+
+.our-purpose__btn span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.our-purpose__btn:hover, .our-purpose__btn:active, .our-purpose__btn:focus {
+  background: #ffffff;
+}
+
+.our-purpose__btn:hover span, .our-purpose__btn:active span, .our-purpose__btn:focus span {
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
