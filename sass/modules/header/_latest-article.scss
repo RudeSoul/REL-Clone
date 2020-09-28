@@ -11,6 +11,7 @@
     width: 43.35%;
     height: 832px;
     max-height: 66%;
+    margin-top: -90px;
 
     padding-left: 0;
     padding-right: 0;
@@ -115,7 +116,7 @@
 
   @include e(right) {
     width: 56.65%;
-    margin-top: 90px;
+    // margin-top: 90px;
   }
 
   @include e(right-content) {
@@ -126,133 +127,5 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-clip: border-box;
-  }
-}
-.shop-section {
-  position: relative;
-
-  @include e(container) {
-    margin-left: -66px;
-  }
-}
-.shop-img {
-  width: 48%;
-  height: 688px;
-
-  background-image: url(./../../images/All-Product-Shop-700x580.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-clip: border-box;
-
-  margin-left: -65px;
-
-  img {
-    width: 100%;
-    object-fit: cover;
-  }
-}
-
-.about-us {
-  margin-top: -14rem;
-  @include e(image) {
-    width: 388px;
-    height: 388px;
-    overflow: hidden;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-  }
-
-  @include e(carousel) {
-    width: 387px;
-    height: 388px;
-  }
-
-  @include e(icons) {
-    margin-top: 24%;
-    margin-left: 20%;
-    margin-bottom: 1rem;
-
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1.75rem;
-    line-height: 1;
-  }
-  @include e(title) {
-    margin-bottom: 2rem;
-
-    border-left: 1px solid #fff;
-    padding-left: 14px;
-    margin-left: 16%;
-
-    color: #ffffff;
-
-    h5 {
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      font-weight: 500;
-      letter-spacing: 0.033em;
-
-      margin-top: 0;
-      margin-bottom: 1.5rem;
-      line-height: 1;
-    }
-    div {
-      font-size: 1rem;
-      letter-spacing: 0.033em;
-    }
-  }
-
-  @include e(btn) {
-    width: fit-content;
-    padding: 1rem 2.75rem;
-    margin-left: 16%;
-
-    span {
-      font-size: 1rem;
-      font-weight: bold;
-    }
-
-    @include hover {
-      background: #ffffff;
-      span {
-        color: #000000;
-      }
-    }
-  }
-}
-
-.our-purpose {
-  background-color: #b1966b;
-  color: #fff;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 44px;
-
-  @include e(title) {
-    margin-top: 76px;
-    margin-bottom: 24px;
-    h2 {
-      font-size: 4.86667rem;
-      font-weight: 400;
-    }
-  }
-
-  @include e(btn) {
-    width: fit-content;
-    margin-top: 30px;
-    span {
-      font-size: 1rem;
-      font-weight: bold;
-    }
-
-    @include hover {
-      background: #ffffff;
-      span {
-        color: #000000;
-      }
-    }
   }
 }
