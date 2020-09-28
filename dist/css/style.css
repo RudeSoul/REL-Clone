@@ -951,4 +951,17 @@ i {
   font-size: 1rem;
   letter-spacing: 0.033em;
 }
+
+.about-us__btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2.75rem;
+  margin-left: 16%;
+}
+
+.about-us__btn span {
+  font-size: 1rem;
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */
