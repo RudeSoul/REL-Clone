@@ -54,12 +54,16 @@
   background: #ffffff;
   padding-top: 10px;
   padding-bottom: 8px;
+
   @include e(wrapper) {
     width: 90%;
     margin: 0 auto;
-    // margin-top: 10px;
     justify-content: space-between;
     align-items: center;
+
+    @include mqMax(x) {
+      width: 95%;
+    }
   }
 
   @include e(logo) {

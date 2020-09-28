@@ -2,6 +2,10 @@
   position: relative;
   margin-top: -90px;
 
+  @include mqMax(x) {
+    width: 121%;
+  }
+
   @include e(container) {
     margin-left: -66px;
   }
@@ -17,6 +21,10 @@
     padding-right: 0;
 
     background-color: #b1966b;
+
+    @include mqMax(x) {
+      width: 34%;
+    }
   }
 
   @include e(left-content) {

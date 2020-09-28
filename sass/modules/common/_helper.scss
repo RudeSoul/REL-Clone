@@ -4,6 +4,12 @@
   }
 }
 
+.h-w-52-pc {
+  @include mqMax(x) {
+    width: 52%;
+  }
+}
+
 .h-width-56 {
   width: 56%;
 

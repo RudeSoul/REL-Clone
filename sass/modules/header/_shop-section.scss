@@ -1,8 +1,16 @@
 .shop-section {
   position: relative;
 
+  @include mqMax(x) {
+    width: 118.5%;
+  }
+
   @include e(container) {
     margin-left: -66px;
+
+    @include mqMax(xl) {
+      width: 121%;
+    }
   }
 }
 .shop-img {
@@ -17,6 +25,14 @@
 
   margin-left: -65px;
 
+  @include mqMax(xl) {
+    width: 41.9%;
+  }
+
+  @include mqMax(x) {
+    width: 34.7%;
+  }
+
   img {
     width: 100%;
     object-fit: cover;
@@ -28,6 +44,10 @@
 
   @include mqMax(xl) {
     margin-top: -14.7rem;
+  }
+
+  @include mqMax(x) {
+    margin-top: -15.6rem;
   }
 
   @include e(image) {
@@ -44,6 +64,11 @@
       width: 380px;
       height: 380px;
     }
+
+    @include mqMax(x) {
+      width: 324px;
+      height: 324px;
+    }
   }
 
   @include e(carousel) {
@@ -55,6 +80,11 @@
     @include mqMax(xl) {
       width: 380px;
       height: 380px;
+    }
+
+    @include mqMax(x) {
+      width: 324px;
+      height: 324px;
     }
   }
 
@@ -113,6 +143,10 @@
   @include e(navigation) {
     margin-left: 16%;
     margin-top: 3.5rem;
+
+    @include mqMax(x) {
+      margin-top: 2.5rem;
+    }
 
     i {
       color: #ffffff;

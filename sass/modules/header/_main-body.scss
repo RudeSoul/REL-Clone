@@ -7,6 +7,10 @@
 .main-page {
   margin: 0 66px;
   background: #414850;
+
+  @include mqMax(x) {
+    margin: 0 32px;
+  }
 }
 
 .main-body-latest-article {
